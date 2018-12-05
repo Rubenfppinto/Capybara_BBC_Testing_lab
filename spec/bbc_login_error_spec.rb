@@ -61,9 +61,5 @@ describe 'Incorrect user details produces valid error' do
             @bbc_site.bbc_sign_in_page.click_sign_in_button
             expect(@bbc_site.bbc_sign_in_page.get_password_error_message).to eq "Uh oh, that password doesn’t match that account. Please try again."
         end
-
-        it 'should sleep' do
-            sleep 5
-        end
     end
 end
